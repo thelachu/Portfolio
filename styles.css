@@ -193,7 +193,7 @@ footer {
   font-size: 1.5rem;
   font-weight: 600;
 }
-@media (max-width: 445px) {
+@media (max-width: 478px) {
   .bar {
     display: block;
   }
