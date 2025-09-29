@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lachu | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function toggleMenu() {
+        document.querySelector(".mobile-nav").classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="navbar">
+        <span class="logo">LACHU</span>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Icon -->
+        <svg
+          onclick="toggleMenu()"
+          class="bar"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 640">
+          <path
+            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+        </svg>
+
+        <!-- Mobile Nav -->
+        <ul class="mobile-nav">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-1" id="home">
+      <div class="sec-1-1">
+        <h1>Hello I'm Lachu</h1>
+        <h3>Front End Developer</h3>
+        <p>
+          I am <strong>Lakshmi Narayana Reddy Kummetha</strong>, a B.Tech
+          student in Artificial Intelligence and Data Science. I specialize in
+          building clean, responsive, and user-friendly websites using HTML,
+          CSS, and JavaScript.
+        </p>
+        <div class="btns">
+          <a href="Resume .pdf" download>
+            <button class="cv">Download Resume</button>
+          </a>
+          <a href="#projects">
+            <button c>Projects</button>
+          </a>
+        </div>
+        <div class="images">
+          <a
+            href="https://www.linkedin.com/in/kummetha-lakshmi-narayana-reddy-999a18301"
+            target="_blank">
+            <img src="linkedin.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/thelachu" target="_blank">
+            <img src="github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+      <div class="sec-1-2">
+        <img class="logo-img" src="logo.jpeg" alt="Profile Logo" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-2" id="about">
+      <h2 class="heading">About Me</h2>
+      <p>
+        I am pursuing <strong>B.Tech</strong> in Artificial Intelligence and
+        Data Science at
+        <strong> Annamacharya Institute of Technology & Sciences</strong>,
+        Rajampet.
+      </p>
+
+      <h4>Core Skills</h4>
+      <h5>Frontend</h5>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Core Java</li>
+      </ul>
+
+      <h5>Tools</h5>
+      <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-3" id="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <!-- Rock papaer scissors project -->
+          <a
+            href="https://thelachu.github.io/RockPaperScissors/"
+            target="_blank">
+            <h3>Rock Paper Scissors Game</h3>
+            <p>Simple rock paper scissors game with HTML CSS JavaScript</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <!-- Calculator project -->
+          <a href="https://thelachu.github.io/Calculator/" target="_blank">
+            <h3>Calculator</h3>
+            <p>Simple calculator project with HTML CSS JavaScript</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <!-- Lottery game project -->
+          <a href="https://thelachu.github.io/Lottery-Game/" target="_blank">
+            <h3>Lottery Game</h3>
+            <p>Simple Lottery game with HTML CSS JavaScript</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div>Social :</div>
+      <div class="images">
+        <a
+          href="https://www.linkedin.com/in/kummetha-lakshmi-narayana-reddy-999a18301"
+          target="_blank">
+          <img src="linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/thelachu" target="_blank">
+          <img src="github.png" alt="GitHub" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
