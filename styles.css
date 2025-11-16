@@ -1,13 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-:root {
-  --main-color: #1e1e1e;
-  --nav-color: #2c2c2c;
+:root .dark {
+  --primary-color: hsl(0, 0%, 10%);
+  --secondary-color: hsl(0, 0%, 20%);
+  --text-color-white: hsl(0, 0%, 95%);
+  --text-color-black: hsl(0, 0%, 10%);
+  --hover: hsl(0, 0%, 15%);
+  --box-shadow: 0px 4px 4px #00000015;
 }
+:root {
+  --primary-color: hsl(0, 0%, 95%);
+  --secondary-color: hsl(0, 0%, 85%);
+  --text-color-white: hsl(0, 0%, 5%);
+  --text-color-black: hsl(0, 0%, 10%);
+  --hover: hsl(0, 0%, 90%);
+  --box-shadow: 0px 4px 4px #00000015;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--main-color);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color-white);
   margin: 0;
   padding: 0;
 }
@@ -16,7 +29,7 @@ html {
 }
 
 .nav {
-  background-color: var(--nav-color);
+  background-color: var(--secondary-color);
   width: 100%;
   position: sticky;
   top: 0;
@@ -34,7 +47,7 @@ html {
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #d4d3d3;
+  color: var(--text-color-white);
 }
 .nav-list {
   display: flex;
@@ -45,21 +58,21 @@ html {
 }
 .nav-list a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color-white);
   font-weight: 500;
   transition: 0.2s;
 }
 .nav-list a:hover {
   text-decoration: underline;
   text-underline-offset: 6px;
-  color: #a4a4a4;
+  color: var(--hover);
 }
 .bar {
   display: none;
   width: 30px;
   height: 30px;
   cursor: pointer;
-  fill: white;
+  fill: var(--text-color-white);
 }
 .mobile-nav {
   display: none;
@@ -70,8 +83,8 @@ html {
   gap: 15px;
   position: absolute;
   right: 0px;
-  top: 0px;
-  background: #2c2c2c;
+  top: 30px;
+  background: var(--secondary-color);
   padding: 30px;
   border-radius: 8px;
 }
@@ -80,10 +93,10 @@ html {
 }
 .mobile-nav li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color-white);
 }
 .mobile-nav li a:hover {
-  color: #979797;
+  color: var(--hover);
 }
 section {
   padding: 80px 20px;
@@ -116,7 +129,7 @@ a {
 .logo-img {
   width: 260px;
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(150, 150, 150, 0.5);
+  box-shadow: var(--box-shadow);
 }
 button {
   padding: 12px 25px;
@@ -129,14 +142,14 @@ button {
   transition: 0.3s;
 }
 .cv {
-  background: linear-gradient(45deg, #252525, #979797);
-  color: white;
+  background: var(--secondary-color);
+  color: var(--text-color-white);
   text-align: center;
 }
 
 .contact {
-  background: #fff;
-  color: #1e1e1e;
+  background: var(--text-color-white);
+  color: var(--secondary-color);
 }
 .cv:hover,
 .contact:hover {
@@ -151,13 +164,13 @@ button {
 .images img {
   width: 40px;
   border-radius: 50%;
-  background-color: #888787;
+  background-color: var(--secondary-color);
   padding: 5px;
   transition: 0.3s;
   cursor: pointer;
 }
 .images img:hover {
-  background-color: #3a3a3a;
+  background-color: var(--secondary-color);
   transform: scale(1.1);
 }
 
@@ -168,7 +181,7 @@ button {
   justify-content: center;
 }
 .project-card {
-  background: #2c2c2c;
+  background: var(--secondary-color);
   padding: 20px;
   border-radius: 12px;
   width: 250px;
@@ -176,14 +189,14 @@ button {
 }
 .project-card a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color-white);
 }
 .project-card:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  box-shadow: var(--hover);
   transform: scale(1.05);
 }
 footer {
-  background-color: var(--nav-color);
+  background-color: var(--secondary-color);
   padding: 20px;
 }
 #contact {
@@ -216,7 +229,7 @@ footer {
   .logo-img {
     width: 260px;
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(150, 150, 150, 0.5);
+    box-shadow: var(--box-shadow);
   }
 }
 @media (min-width: 450px) {
